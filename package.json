@@ -1,0 +1,10 @@
+{
+  "name": "n10y",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "author": {
+    "name": "Pooya Parsa",
+    "email": "pyapar@gmail.com"
+  }
+}
