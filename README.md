@@ -4,14 +4,14 @@ Converts `internasionalization` to `i18n` (where 18 stands for the number of let
 
 ## Usage
 
-1️⃣ Install:
+Install:
 
 ```
 yarn add n10y
 npm i n10y
 ```
 
-2️⃣ Import:
+Import:
 
 ```js
 import n10y from 'n10y'
@@ -19,7 +19,7 @@ import n10y from 'n10y'
 const n10y = require('n10y')
 ```
 
-3️⃣ Use:
+Use:
 
 ```js
 console.log(n10y('wombat'))
