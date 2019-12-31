@@ -48,6 +48,12 @@ Shift/Pop (@pi0):
 const i18fy = s => s.split('').shift() + (s.length - 2) + s.split('').pop()
 ```
 
+Shift/Pop, taking advantage of mutation to get correct length (@jonaskuske):
+
+```js
+const i18fy = s => (s = s.split(''), s.shift() + (l => s.length + l)(s.pop()))
+```
+
 Replace (@pimlie)
 ```js
 const i18fy = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
