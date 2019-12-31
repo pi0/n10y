@@ -48,6 +48,11 @@ Shift/Pop (@pi0):
 const i18fy = s => s.split('').shift() + (s.length - 2) + s.split('').pop()
 ```
 
+Replace (@pimlie)
+```js
+const i18fy = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
+```
+
 ## Related Projects
 
 - [n10y](https://github.com/foriequal0/n10y) - Numeronymify everything
