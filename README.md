@@ -48,24 +48,6 @@ Shift/Pop (@pi0):
 const i18fy = s => s.split('').shift() + (s.length - 2) + s.split('').pop()
 ```
 
-Object Destructure (@jonaskuske):
-
-```js
-const i18fy = s => {
-  const { 0: firstChar, [s.length - 1]: lastChar, length } = s
-  return firstChar + (length - 2) + lastChar
-}
-```
-
-Array Destructure (@jonaskuske):
-
-```js
-const i18fy = s => {
-  const chars = s.split(''), [firstChar] = chars, [lastChar] = chars.reverse()
-  return firstChar + (chars.length - 2) + lastChar
-}
-```
-
 Shift/Pop, taking advantage of mutation to get correct length (@jonaskuske):
 
 ```js
