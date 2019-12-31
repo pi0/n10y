@@ -39,24 +39,24 @@ Do you have another crazy idea? Open a PR! Everything working is accepted!
 First (@pi0):
 
 ```js
-const i18fy = s => s[0] + (s.length - 2) + s[s.length - 1]
+const n10y = s => s[0] + (s.length - 2) + s[s.length - 1]
 ```
 
 Shift/Pop (@pi0):
 
 ```js
-const i18fy = s => s.split('').shift() + (s.length - 2) + s.split('').pop()
+const n10y = s => s.split('').shift() + (s.length - 2) + s.split('').pop()
 ```
 
 Shift/Pop, taking advantage of mutation to get correct length (@jonaskuske):
 
 ```js
-const i18fy = s => (s = s.split(''), s.shift() + (l => s.length + l)(s.pop()))
+const n10y = s => (s = s.split(''), s.shift() + (l => s.length + l)(s.pop()))
 ```
 
 Replace (@pimlie)
 ```js
-const i18fy = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
+const n10y = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
 ```
 
 ## Related Projects
