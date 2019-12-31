@@ -54,6 +54,11 @@ Shift/Pop, taking advantage of mutation to get correct length (@jonaskuske):
 const i18fy = s => (s = s.split(''), s.shift() + (l => s.length + l)(s.pop()))
 ```
 
+Replace (@pimlie)
+```js
+const i18fy = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
+```
+
 ## Related Projects
 
 - [n10y](https://github.com/foriequal0/n10y) - Numeronymify everything
