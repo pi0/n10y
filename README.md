@@ -59,6 +59,11 @@ Replace (@pimlie)
 const n10y = s => s.replace(/^(\S)(\S*)(\S)$/, (_, st, nd, rd) => st + (nd.length > 1 ? nd.length : nd) + rd)
 ```
 
+Spread (@alireza-mh)
+```js
+const n10y = s => {const {0: first, [s.length-1]: last} = s ; return first+(s.length-2)+last}
+```
+
 ## Related Projects
 
 - [n10y](https://github.com/foriequal0/n10y) - Numeronymify everything
